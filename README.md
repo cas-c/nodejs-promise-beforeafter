@@ -8,7 +8,7 @@ npm install --save vzwGrey/nodejs-promise-after
 
 ## Example
 ```js
-const beforeafter = require('..');
+const beforeafter = require('nodejs-promise-after');
 
 const somePromise = new Promise((res) => {
 	setTimeout(() => {

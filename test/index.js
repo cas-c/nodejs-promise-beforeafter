@@ -1,11 +1,11 @@
-const after = require('..');
+const before = require('..');
 
-const somePromise = new Promise((res) => {
+const somePromise = new Promise(() => {
 	setTimeout(() => {
-		res("Hello, world!");
+		console.log("Hello, world!");
 	}, 5000);
 });
 
-after(somePromise, (message) => {
-	console.log(message);
+before(somePromise, () => {
+	console.log('This needs to happen before my promise! It is very important.');
 });
